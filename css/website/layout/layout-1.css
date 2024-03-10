@@ -2002,7 +2002,7 @@ a.powered-by-footer-tag:hover {
   
   /* Custom table */
   .custom-table {
-    width: 75%;
+    width: 90%;
     margin: 10px auto;
     border-collapse: collapse;
     border-radius: 8px;
@@ -2051,7 +2051,9 @@ a.powered-by-footer-tag:hover {
     .custom-table th,
     .custom-table td {
       padding: 8px;
+      ;
     }
+  
   }
   
   /* Styling specific cells or columns */
@@ -2341,7 +2343,7 @@ a.powered-by-footer-tag:hover {
     }
 
     .ourstory.content-section,
-    .functions.content-section,
+    
     .travel.content-section,
     .join-virtually.content-section,
     #gift_registry.content-section,
@@ -2349,9 +2351,15 @@ a.powered-by-footer-tag:hover {
     #rsvp.content-section,
     #guest_book.content-section {
         margin: -77px auto 50px !important;
-        padding-top: 85px !important;
+        padding-top: 55px !important;
     }
-
+    .functions.content-section{
+        margin: -77px auto 50px !important;
+        padding-top: 15px !important;
+    }
+    .banner-video{
+        padding: 0 !important;
+    }
     .ww-nav .nav-item:last-child a {
         border: none;
     }
@@ -2957,7 +2965,7 @@ a.powered-by-footer-tag:hover {
     }
     .banner-video{
         height: 100vh;
-        object-fit: cover;
+        /* object-fit: cover; */
     }
 }
 
@@ -2982,6 +2990,10 @@ a.powered-by-footer-tag:hover {
     -moz-column-gap:20px;
     column-gap:20px;
   }
+    .banner-video{
+    padding: 0 !important
+    }
+
   }
   @media (max-width:800px){
     #drive-image-container{
