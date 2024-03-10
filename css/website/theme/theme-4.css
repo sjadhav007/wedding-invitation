@@ -6,7 +6,9 @@
 }
 
 #header-logo {
-    max-width: 100% !important;
+    height: 81px;
+    max-width: 30% !important;
+
 }
 
 h1.couple-name,
