@@ -1,705 +1,904 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="./css/font/font-awesome.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="./css/website/global/theme-4.css">
-        <link rel="stylesheet" type="text/css" href="./css/website/layout/layout-1.css">
-        <link rel="stylesheet" type="text/css" href="./css/website/theme/theme-4.css">
-        <link rel="stylesheet" type="text/css" href="./css/jquery.datetimepicker.min.css">
-        <link rel="icon" type="image/x-icon" href="./css/images/banner/wedding.png">
-        <script src="https://apis.google.com/js/api.js"></script>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <title>Radha&Sunil</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Radha&Sunil"/>
-        <meta property="og:image:width" content="300"/>
-        <meta property="og:image:height" content="300"/>
-        <meta property="og:description" content="Here you will find function details and useful information for our upcoming celebration"/>
-        <meta property="og:site_name" content="savethedate"/>
-        <meta property="fb:app_id" content="642917362513460"/>
-        <meta name="csrf-token" content="HPwvGEI8ojTHKny7JyX3hxv2BYcbYIE63jepLaJK">
-        <style>
-            .banner-image {
-                content: url("./css/images/family/couple.jpeg");
-            }
-        </style>
-    </head>
-    <body class="body-background">
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKJ63ZX&gtm_auth=QZ-jaydfvUBwokLsxP2X3w&gtm_preview=env-1&gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
-        <div class="play-music d-none">
-            <img id="thumb-image-off" class="thumb-image fa-play-circle d-none" src="./css/images/audio/sound-off.png">
-            <img id="thumb-image-on" class="thumb-image fa-play-circle d-none" src="./css/images/audio/sound-on.png">
-        </div>
-        <div class="audio-div d-none">
-            <audio loop="" id="mymusic" controls="controls">
-                <source src="./css/website/music/Sar-Sukhachi.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-        
-        <header class="ww-nav-bg-color">
-            <nav class="navbar navbar-expand-md navbar-light ww-nav-max-width">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="javascript:void(0)">
-                        <div class="logo-container">
-                            <img src="./css/images/logo/logo3.png" id="header-logo" alt="Website Logo"/>
-                        </div>
-                    </a>
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse ww-nav-right" id="navbarCollapse">
-                        <ul class="navbar-nav ww-nav desktop-header text-uppercase">
-                            <li class="nav-item">
-                                <a class="nav-link our_story_header" href="#our_story">आमची कथा</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link functions_header" href="#functions">कार्यक्रम</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link travel_header" href="#travel">प्रवास</a>
-                            </li>
-                            <li class="nav-item photo_gallery">
-                                <a class="nav-link photo_gallery_header" href="#photo_gallery">गॅलरी</a>
-                            </li>
-                         </ul>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/font/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/website/global/theme-4.css">
+    <link rel="stylesheet" type="text/css" href="./css/website/layout/layout-1.css">
+    <link rel="stylesheet" type="text/css" href="./css/website/theme/theme-4.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.datetimepicker.min.css">
+    <link rel="icon" type="image/x-icon" href="./css/images/banner/wedding.png">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Radha&Sunil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Radha&Sunil" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:description"
+        content="Here you will find function details and useful information for our upcoming celebration" />
+    <meta property="og:site_name" content="savethedate" />
+    <meta property="fb:app_id" content="642917362513460" />
+    <meta name="csrf-token" content="HPwvGEI8ojTHKny7JyX3hxv2BYcbYIE63jepLaJK">
+    <style>
+        .banner-image {
+            content: url("./css/images/family/couple.jpeg");
+        }
+    </style>
+</head>
+
+<body class="body-background">
+    <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PKJ63ZX&gtm_auth=QZ-jaydfvUBwokLsxP2X3w&gtm_preview=env-1&gtm_cookies_win=x"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="play-music d-none">
+        <img id="thumb-image-off" class="thumb-image fa-play-circle d-none" src="./css/images/audio/sound-off.png">
+        <img id="thumb-image-on" class="thumb-image fa-play-circle d-none" src="./css/images/audio/sound-on.png">
+    </div>
+    <div class="audio-div d-none">
+        <audio loop="" id="mymusic" controls="controls">
+            <source src="./css/website/music/Sar-Sukhachi.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <header class="ww-nav-bg-color">
+        <nav class="navbar navbar-expand-md navbar-light ww-nav-max-width">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <div class="logo-container">
+                        <img src="./css/images/logo/logo3.png" id="header-logo" alt="Website Logo" />
                     </div>
-                </div>
-            </nav>
-        </header>
-        <section class="title" id="title">
-            <div class="wedding-content text-center">
-                <h1 class="couple-name">राधा &amp; सुनिल</h1>
-                <div class="wedding-date text-capitalize pt-lg-3">28 ,मार्च, 2024</div>
-                <div class="wedding-venue text-capitalize">लिंबाला तांडा</div>
-            </div>
-        </section>
-        <section class="countdown-section">
-            <div class="countdown-banner header-countdown">
-                <div class="countdown-value">
-                    <div class="timer days">00</div>
-                    <div class="title">Days</div>
-                </div>
-                <div class="countdown-value">
-                    <div class="timer hours">00</div>
-                    <div class="title">Hours</div>
-                </div>
-                <div class="count-down-message">
-                    आजचा दिवस<br>मोठा आहे! 
-                </div>
-                <div class="countdown-value">
-                    <div class="timer min">00</div>
-                    <div class="title d-none d-sm-none d-md-block">Minutes</div>
-                    <div class="title d-sm-block d-md-none">Mins</div>
-                </div>
-                <div class="countdown-value">
-                    <div class="timer sec">00</div>
-                    <div class="title d-none d-sm-none d-md-block">Seconds</div>
-                    <div class="title d-sm-block d-md-none">Secs</div>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ww-nav-right" id="navbarCollapse">
+                    <ul class="navbar-nav ww-nav desktop-header text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link our_story_header" href="#our_story">आमची कथा</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link functions_header" href="#functions">कार्यक्रम</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link travel_header" href="#travel">प्रवास</a>
+                        </li>
+                        <li class="nav-item photo_gallery">
+                            <a class="nav-link photo_gallery_header" href="#photo_gallery">गॅलरी</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!-- <div class="row today-banner">
+        </nav>
+    </header>
+    <section class="title" id="title">
+        <div class="wedding-content text-center">
+            <h1 class="couple-name">राधा &amp; सुनिल</h1>
+            <div class="wedding-date text-capitalize pt-lg-3">28 ,मार्च, 2024</div>
+            <div class="wedding-venue text-capitalize">लिंबाला तांडा</div>
+        </div>
+    </section>
+    <section class="countdown-section">
+        <div class="countdown-banner header-countdown">
+            <div class="countdown-value">
+                <div class="timer days">00</div>
+                <div class="title">Days</div>
+            </div>
+            <div class="countdown-value">
+                <div class="timer hours">00</div>
+                <div class="title">Hours</div>
+            </div>
+            <div class="count-down-message">
+                आजचा दिवस<br>मोठा आहे!
+            </div>
+            <div class="countdown-value">
+                <div class="timer min">00</div>
+                <div class="title d-none d-sm-none d-md-block">Minutes</div>
+                <div class="title d-sm-block d-md-none">Mins</div>
+            </div>
+            <div class="countdown-value">
+                <div class="timer sec">00</div>
+                <div class="title d-none d-sm-none d-md-block">Seconds</div>
+                <div class="title d-sm-block d-md-none">Secs</div>
+            </div>
+        </div>
+        <!-- <div class="row today-banner">
                 <div class="col-xs-12 today-message m-auto text-center">आमच्या मोठ्या दिवसाचा एक भाग असल्याबद्दल धन्यवाद! खाली काही आठवणी आहेत ज्या आम्हाला शेअर करायला आवडेल...</div>
             </div> -->
-            <div class="row old-banner pt-4">
-                <div class="col-xs-12 today-message m-auto text-center">आमच्या मोठ्या दिवसाचा एक भाग असल्याबद्दल धन्यवाद! खाली काही आठवणी आहेत ज्या आम्हाला शेअर करायला आवडेल...</div>
-            </div>
-        </section>
-        <!-- <section class="banner text-center" id="banner">
+        <div class="row old-banner pt-4">
+            <div class="col-xs-12 today-message m-auto text-center">आमच्या मोठ्या दिवसाचा एक भाग असल्याबद्दल धन्यवाद!
+                खाली काही आठवणी आहेत ज्या आम्हाला शेअर करायला आवडेल...</div>
+        </div>
+    </section>
+    <!-- <section class="banner text-center" id="banner">
             <img class="banner-image" src="./css/images/family/couple.jpeg" alt="Banner image">
         </section> -->
-        <section class="banner d-flex text-center pt-3 pb-4" id="banner">
-            <video class="banner-video" controls autoplay loop muted>
-                <source src="./css/video/invite.mp4" type="video/mp4">
-                <!-- If you have different video formats for cross-browser compatibility -->
-                <!-- <source src="path_to_your_video.webm" type="video/webm">
+    <section class="banner d-flex text-center pt-3 pb-4" id="banner">
+        <video class="banner-video" controls autoplay loop muted>
+            <source src="./css/video/invite.mp4" type="video/mp4">
+            <!-- If you have different video formats for cross-browser compatibility -->
+            <!-- <source src="path_to_your_video.webm" type="video/webm">
                 <source src="path_to_your_video.ogv" type="video/ogg"> -->
-            </video>
-        </section>
-        
-        <section class="ourstory content-section" id="our_story">
-            <div class="container">
-                <div class="section-title">आमची कथा </div>
-                <div class="content-list">
-                    <h5 class="time-line-divider"></h5>
-                    <div class="row ourstory-all-sections">
-                        <div class="col-sm-12 col-md-6 ourstory-section-wrapper">
-                            <div class="ourstory-section">
-                                <div class="ourstory-title-wrapper">
-                                    <div class="ourstory-title left-text">आम्ही कसे भेटलो</div>
-                                    <div class="arrow-cls">
-                                        <span id="our-success-story-1-text1" class="css-shape">2024 </span>
-                                    </div>
-                                    <div class="ourstory-title right-text">आम्ही कसे भेटलो</div>
+        </video>
+    </section>
+
+    <section class="ourstory content-section" id="our_story">
+        <div class="container">
+            <div class="section-title">आमची कथा </div>
+            <div class="content-list">
+                <h5 class="time-line-divider"></h5>
+                <div class="row ourstory-all-sections">
+                    <div class="col-sm-12 col-md-6 ourstory-section-wrapper">
+                        <div class="ourstory-section">
+                            <div class="ourstory-title-wrapper">
+                                <div class="ourstory-title left-text">आम्ही कसे भेटलो</div>
+                                <div class="arrow-cls">
+                                    <span id="our-success-story-1-text1" class="css-shape">2024 </span>
                                 </div>
-                                <figure id="story-1-img" class="ourstory-img h">
-                                    <img src="./css/images/family/couple.jpeg" alt="Our Story 1">
-                                </figure>
-                                <p id="our-success-story-1-text2">
-                                    हि एक अरेंज मॅरेज आहे, तुम्हाला माहित असेल की आम्ही नेमके कसे भेटलो? त्यामुळे आम्हाला काहीही सांगण्याची गरज नाही...</p>
+                                <div class="ourstory-title right-text">आम्ही कसे भेटलो</div>
                             </div>
+                            <figure id="story-1-img" class="ourstory-img h">
+                                <img src="./css/images/family/couple.jpeg" alt="Our Story 1">
+                            </figure>
+                            <p id="our-success-story-1-text2">
+                                हि एक अरेंज मॅरेज आहे, तुम्हाला माहित असेल की आम्ही नेमके कसे भेटलो? त्यामुळे आम्हाला
+                                काहीही सांगण्याची गरज नाही...</p>
                         </div>
-                        <div class="col-sm-12 col-md-6 ourstory-section-wrapper">
-                            <div class="ourstory-section">
-                                <div class="ourstory-title-wrapper">
-                                    <div class="ourstory-title left-text">लग्नाचा प्रस्ताव</div>
-                                    <div class="arrow-cls">
-                                        <span id="our-success-story-2-text1" class="css-shape">2024 </span>
-                                    </div>
-                                    <div class="ourstory-title right-text">लग्नाचा प्रस्ताव</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 ourstory-section-wrapper">
+                        <div class="ourstory-section">
+                            <div class="ourstory-title-wrapper">
+                                <div class="ourstory-title left-text">लग्नाचा प्रस्ताव</div>
+                                <div class="arrow-cls">
+                                    <span id="our-success-story-2-text1" class="css-shape">2024 </span>
                                 </div>
-                                <figure id="story-2-img" class="ourstory-img">
-                                    <img src="./css/images/family/image2.jpeg" alt="Our Story 2">
-                                </figure>
-                                <p id="our-success-story-2-text2">कुटुंबांनी ठरवले आणि वर आणि वधू दोघांनी स्वीकारले.</p>
+                                <div class="ourstory-title right-text">लग्नाचा प्रस्ताव</div>
                             </div>
+                            <figure id="story-2-img" class="ourstory-img">
+                                <img src="./css/images/family/image2.jpeg" alt="Our Story 2">
+                            </figure>
+                            <p id="our-success-story-2-text2">कुटुंबांनी ठरवले आणि वर आणि वधू दोघांनी स्वीकारले.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="ourstory content-section" id="our_story">
-            <div class="container">
-                <div class="section-title">नाते संबंध </div>
-                <div class="content-list">
-                    <h5 class="time-line-divider"></h5>
-                    <div class="row ourstory-all-sections ">
-                        <div class="col-sm-12 col-md-6 ourstory-section-wrapper relatives">
-                            <div class="ourstory-section">
-                                <div class="ourstory-title-wrapper">
-                                    <div class="ourstory-title left-text">वराचे वडील </div>
-                                    <div class="arrow-cls">
-                                        <span id="our-success-story-2-text1" class="css-shape">2024 </span>
-                                    </div>
-                                    <div class="ourstory-title right-text">वराचे वडील </div>
-                                </div>
-                                <figure id="story-2-img" class="ourstory-img ">
-                                    <img src="./css/images/family/papa.jpg" alt="Our Story 2">
-                                </figure>
-                                <p id="our-success-story-2-text2" >श्री. बाबासाहेब नंदू जाधव</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 ourstory-section-wrapper relatives">
-                            <div class="ourstory-section">
-                                <div class="ourstory-title-wrapper">
-                                    <div class="ourstory-title left-text">वराची आई </div>
-                                    <div class="arrow-cls">
-                                        <span id="our-success-story-1-text1" class="css-shape">2024 </span>
-                                    </div>
-                                    <div class="ourstory-title right-text">वराची आई </div>
-                                </div>
-                                <figure id="story-1-img" class="ourstory-img ">
-                                    <img src="./css/images/family/aai.jpg" alt="Our Story 1">
-                                </figure>
-                                <p id="our-success-story-1-text2">सौ.आशाबाई बाबासाहेब जाधव</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="ourstory content-section" id="our_story">
-            <div class="container">
-                <div class="section-title">वधूचे आई बाबा </div>
-                <div class="content-list">
-                    <h5 class="time-line-divider"></h5>
-                    <div class="row ourstory-all-sections">
-                        <div class="col-sm-12 col-md-6 ourstory-section-wrapper relatives">
-                            <div class="ourstory-section">
-                                <div class="ourstory-title-wrapper">
-                                    <div class="ourstory-title left-text">वधूचे वडील</div>
-                                    <div class="arrow-cls">
-                                        <span id="our-success-story-2-text1" class="css-shape">2024 </span>
-                                    </div>
-                                    <div class="ourstory-title right-text">वधूचे वडील</div>
-                                </div>
-                                <figure id="story-2-img" class="ourstory-img ">
-                                    <img src="./css/images/family/Bride side/123.jpg" alt="Our Story 2">
-                                </figure>
-                                <p id="our-success-story-2-text2">श्री गजानन माणिक राठोड</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 ourstory-section-wrapper relatives">
-                            <div class="ourstory-section">
-                                <div class="ourstory-title-wrapper">
-                                    <div class="ourstory-title left-text">वधूची आई</div>
-                                    <div class="arrow-cls">
-                                        <span id="our-success-story-1-text1" class="css-shape">2024 </span>
-                                    </div>
-                                    <div class="ourstory-title right-text">वधूची आई</div>
-                                </div>
-                                <figure id="story-1-img" class="ourstory-img ">
-                                    <img src="./css/images/family/Bride side/111.jpg" alt="Our Story 1">
-                                </figure>
-                                <p id="our-success-story-1-text2">सौ. बबिता गजानन राठोड</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <div class="table-container">
-          <table class="custom-table p-lg-5">
-            <tr><th colspan="3">विनंतीस मान देऊन मंगल कार्यास अगत्य येण्याचे करावे</th></tr>
-            <tr><td>श्री पोमा लखमा जाधव</td><td>श्री धर्मा दिपला जाधव</td><td>श्री प्रभु धावजी जाधव</td></tr>
-            <tr><td>श्री पांडू दिपला जाधव</td><td>श्री भिमा चतरु जाधव</td><td>श्री नारायण टिका जाधव</td></tr>
-            <tr><td>श्री महादु दिपला जाधव(पं.स.सदस्य)</td><td>श्री दासु चतरु जाधव</td><td>श्री शिवदास चतरु जाधव</td></tr>
-            <tr><td>श्री फकिरा भिका जाधव</td><td>श्री शेषराव चतरु जाधव(आर्मी)</td></tr>   
-          </table>
-          
-          
-          <table class="custom-table p-lg-5 pb-3">
-            <tr><th colspan="3">वडिलांच्या विनंतीस मान देऊन मंगल कार्यास अगत्य येण्याचे करावे</th></tr>
-            <tr><td>श्री विठ्ठल होना जाधव</td><td>श्री बंडू होना जाधव</td><td>श्री कोंडीराम नंदु जाधव(आश्रमशाळा सेवक)</td></tr>
-            <tr><td>श्री गणेश चंदु जाधव</td><td>श्री विठ्ठल जेमला जाधव </td><td>श्री गुलाब धर्मा जाधव</td></tr>
-            <tr><td>श्री गजानन पांडू जाधव </td><td>श्री वसंत पोमा जाधव</td><td>श्री प्रकाश बाळू जाधव</td></tr>
-            <tr><td>श्री आश्रोबा शंकर जाधव</td><td>श्री बळीराम कनिराम जाधव(रोजगार सेवक)</td><td>श्री सुरेश प्रभु जाधव(बँक मॅनेजर)</td></tr>
-            <tr><td>श्री नामदेव शिवदास जाधव</td><td>श्री विजय प्रभु जाधव</td><td>श्री बबन शंकर जाधव</td></tr>
-            <tr><td>श्री विलास नारायण जाधव</td><td>श्री रोहीदास तोळीराम जाधव</td><td>श्री ऋषीकेश शेषराव जाधव</td></tr>
-            <tr><td>श्री उत्तम होना जाधव </td><td>श्री धोंडीराम नंदु जाधव</td><td>श्री माणिक चंदु जाधव</td></tr>
-            <tr><td>श्री विलास धर्मा जाधव</td><td>श्री रामा पांडू जाधव</td><td>श्री मुरलीधर फत्तु जाधव</td></tr>
-            <tr><td>श्री सुभाष जेमला जाधव </td><td>श्री मांगीलाल कनिराम जाधव</td><td>श्री रामा फत्तु जाधव </td></tr>
-            <tr><td>श्री लक्ष्मण पोमा जाधव</td><td>श्री शिवदास बाळू जाधव</td><td>श्री वामन फकीरा जाधव </td></tr>
-            <tr><td>श्री भुजंग महादु जाधव</td><td>श्री रामा दासु जाधव</td><td>श्री सुदाम भिमराव जाधव (SRPF)</td></tr>
-            <tr><td>श्री मधुकर भिमराव जाधव</td><td>श्री बबन दासु जाधव </td><td>श्री सतीष कनिराम जाधव(आरोग्य सेवक)</td></tr>
-            <tr><td>श्री राजु महादु जाधव(मा.सरपंच)</td><td>श्री दिलीप प्रभु जाधव</td><td>श्री दिनेश प्रभु जाधव</td></tr>
-            <tr><td>श्री श्रीराम शिवदास जाधव(पोलिस उपनिरीक्षक अकोला)</td><td>श्री लहू प्रभु जाधव</td><td>श्री सुनिल दासु जाधव</td></tr>
-            <tr><td>श्री गजानन तोळीराम जाधव</td><td>श्री दिलीप नारायण जाधव (कोतवाल)</td><td>श्री विष्णू तोळीराम जाधव</td></tr>
-            <tr><td>श्री योगेश शेषराव जाधव(बी.फार्म)</td></tr>
-          </table>
-    
-          <table class="custom-table p-lg-5">
-            <tr><th colspan="3">भाऊबंधांच्या विनंतीस मान देऊन मंगल कार्यास अगत्य येण्याचे करावे</th></tr>
-            <tr><td>श्री प्रेमदास धोंडीराम जाधव</td><td>श्री लखन कोंडीराम जाधव</td><td>श्री विजय विठ्ठल जाधव</td></tr>
-            <tr><td>श्री गजानन माणिक जाधव</td><td>श्री रमेश बंडू जाधव कनिष्ठ लिपीक</td><td>श्री राजु उत्तम जाधव(आश्रमशाळा सेवक)</td></tr>
-            <tr><td>श्री रामा कोंडीराम जाधव</td><td>श्री भारत मांगीलाल जाधव(रेल्वे ट्रॅकमन)</td><td>श्री कैलास गणेश जाधव</td></tr>
-            <tr><td>श्री ज्ञानेश्वर धोंडीराम जाधव (शिक्षक)</td><td>श्री बाळू गणेश जाधव</td><td>श्री नवनाथ बंडू जाधव</td></tr>
-            <tr><td>श्री शरद मांगीलाल जाधव</td></tr>
-          </table>
-          <div class="">
-          <table class="custom-table p-lg-5">
-            <tr><th>चिरंजिव</th></tr>
-            <tr><td>अर्जुन(MSF),अभिषेक,ज्ञानेश्वर,आनंदराज</td></tr>
-            <tr><td>धनंजय, अभिजीत,साईप्रसाद,महेश</td></tr>
-          </table>
-          <table class="custom-table p-lg-5">
-            <tr><th colspan="3">व्यवस्थापक</th></tr>
-            <tr><td>प्रकाश किशन राठोड, गणेशनगर</td><td>साहेबराव जयसिंग राठोड, साईनगर</td><td>त्रिंबक शंकर राठोड, घेवंडा</td></tr>
-            <tr><td>रमेश विश्वनाथ राठोड, घडोळी</td><td>गजानन राठोड घेवंडा</td><td>राहुल गोपाल चव्हाण, साईनगर</td></tr>
-            <tr><td>मधुकर मोहन राठोड, साईनगर</td><td>गजानन विठ्ठल राठोड,केळी</td><td>बाबासाहेब परसराम राठोड, लिंगदरी</td></tr>
-            <tr><td>कुंडलिक खंडू पवार, लिंगदरी</td><td>अमोल रामा राठोड, साईनगर</td><td>सुनिल काळुराम चव्हाण, साईनगर</td></tr>
-            <tr><td>रवि भिमा राठोड, चारठाणा</td><td>संतोष विठ्ठल राठोड, घडोळी</td><td>विशाल विष्णू राठोड, गणेशनगर</td></tr>
-            <tr><td>किरण रेवनसिंह राठोड, तामटी</td><td>विनोद शामराव राठोड, दुधाळा</td></tr>
-          </table>
         </div>
-          <table class="custom-table p-lg-5">
-            <tr><th colspan="3">कार्यवाहक</th></tr>
-            <tr><td>नरसिंग धर्मा राठोड, बोरखेडी</td><td>रामराव धर्मा राठोड, बोरखेडी</td><td>तारासिंग धर्मा राठोड, बोरखेडी</td></tr>
+    </section>
+
+    <section class="ourstory content-section" id="our_story">
+        <div class="container">
+            <div class="section-title">नाते संबंध </div>
+            <div class="content-list">
+                <h5 class="time-line-divider"></h5>
+                <div class="row ourstory-all-sections ">
+                    <div class="col-sm-12 col-md-6 ourstory-section-wrapper relatives">
+                        <div class="ourstory-section">
+                            <div class="ourstory-title-wrapper">
+                                <div class="ourstory-title left-text">वराचे वडील </div>
+                                <div class="arrow-cls">
+                                    <span id="our-success-story-2-text1" class="css-shape">2024 </span>
+                                </div>
+                                <div class="ourstory-title right-text">वराचे वडील </div>
+                            </div>
+                            <figure id="story-2-img" class="ourstory-img ">
+                                <img src="./css/images/family/papa.jpg" alt="Our Story 2">
+                            </figure>
+                            <p id="our-success-story-2-text2">श्री. बाबासाहेब नंदू जाधव</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 ourstory-section-wrapper relatives">
+                        <div class="ourstory-section">
+                            <div class="ourstory-title-wrapper">
+                                <div class="ourstory-title left-text">वराची आई </div>
+                                <div class="arrow-cls">
+                                    <span id="our-success-story-1-text1" class="css-shape">2024 </span>
+                                </div>
+                                <div class="ourstory-title right-text">वराची आई </div>
+                            </div>
+                            <figure id="story-1-img" class="ourstory-img ">
+                                <img src="./css/images/family/aai.jpg" alt="Our Story 1">
+                            </figure>
+                            <p id="our-success-story-1-text2">सौ.आशाबाई बाबासाहेब जाधव</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ourstory content-section" id="our_story">
+        <div class="container">
+            <div class="section-title">वधूचे आई बाबा </div>
+            <div class="content-list">
+                <h5 class="time-line-divider"></h5>
+                <div class="row ourstory-all-sections">
+                    <div class="col-sm-12 col-md-6 ourstory-section-wrapper relatives">
+                        <div class="ourstory-section">
+                            <div class="ourstory-title-wrapper">
+                                <div class="ourstory-title left-text">वधूचे वडील</div>
+                                <div class="arrow-cls">
+                                    <span id="our-success-story-2-text1" class="css-shape">2024 </span>
+                                </div>
+                                <div class="ourstory-title right-text">वधूचे वडील</div>
+                            </div>
+                            <figure id="story-2-img" class="ourstory-img ">
+                                <img src="./css/images/family/Bride side/123.jpg" alt="Our Story 2">
+                            </figure>
+                            <p id="our-success-story-2-text2">श्री गजानन माणिक राठोड</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 ourstory-section-wrapper relatives">
+                        <div class="ourstory-section">
+                            <div class="ourstory-title-wrapper">
+                                <div class="ourstory-title left-text">वधूची आई</div>
+                                <div class="arrow-cls">
+                                    <span id="our-success-story-1-text1" class="css-shape">2024 </span>
+                                </div>
+                                <div class="ourstory-title right-text">वधूची आई</div>
+                            </div>
+                            <figure id="story-1-img" class="ourstory-img ">
+                                <img src="./css/images/family/Bride side/111.jpg" alt="Our Story 1">
+                            </figure>
+                            <p id="our-success-story-1-text2">सौ. बबिता गजानन राठोड</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="table-container">
+        <table class="custom-table p-lg-5">
+            <tr>
+                <th colspan="3">विनंतीस मान देऊन मंगल कार्यास अगत्य येण्याचे करावे</th>
+            </tr>
+            <tr>
+                <td>श्री पोमा लखमा जाधव</td>
+                <td>श्री धर्मा दिपला जाधव</td>
+                <td>श्री प्रभु धावजी जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री पांडू दिपला जाधव</td>
+                <td>श्री भिमा चतरु जाधव</td>
+                <td>श्री नारायण टिका जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री महादु दिपला जाधव(पं.स.सदस्य)</td>
+                <td>श्री दासु चतरु जाधव</td>
+                <td>श्री शिवदास चतरु जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री फकिरा भिका जाधव</td>
+                <td>श्री शेषराव चतरु जाधव(आर्मी)</td>
+            </tr>
+        </table>
+
+
+        <table class="custom-table p-lg-5 pb-3">
+            <tr>
+                <th colspan="3">वडिलांच्या विनंतीस मान देऊन मंगल कार्यास अगत्य येण्याचे करावे</th>
+            </tr>
+            <tr>
+                <td>श्री विठ्ठल होना जाधव</td>
+                <td>श्री बंडू होना जाधव</td>
+                <td>श्री कोंडीराम नंदु जाधव(आश्रमशाळा सेवक)</td>
+            </tr>
+            <tr>
+                <td>श्री गणेश चंदु जाधव</td>
+                <td>श्री विठ्ठल जेमला जाधव </td>
+                <td>श्री गुलाब धर्मा जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री गजानन पांडू जाधव </td>
+                <td>श्री वसंत पोमा जाधव</td>
+                <td>श्री प्रकाश बाळू जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री आश्रोबा शंकर जाधव</td>
+                <td>श्री बळीराम कनिराम जाधव(रोजगार सेवक)</td>
+                <td>श्री सुरेश प्रभु जाधव(बँक मॅनेजर)</td>
+            </tr>
+            <tr>
+                <td>श्री नामदेव शिवदास जाधव</td>
+                <td>श्री विजय प्रभु जाधव</td>
+                <td>श्री बबन शंकर जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री विलास नारायण जाधव</td>
+                <td>श्री रोहीदास तोळीराम जाधव</td>
+                <td>श्री ऋषीकेश शेषराव जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री उत्तम होना जाधव </td>
+                <td>श्री धोंडीराम नंदु जाधव</td>
+                <td>श्री माणिक चंदु जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री विलास धर्मा जाधव</td>
+                <td>श्री रामा पांडू जाधव</td>
+                <td>श्री मुरलीधर फत्तु जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री सुभाष जेमला जाधव </td>
+                <td>श्री मांगीलाल कनिराम जाधव</td>
+                <td>श्री रामा फत्तु जाधव </td>
+            </tr>
+            <tr>
+                <td>श्री लक्ष्मण पोमा जाधव</td>
+                <td>श्री शिवदास बाळू जाधव</td>
+                <td>श्री वामन फकीरा जाधव </td>
+            </tr>
+            <tr>
+                <td>श्री भुजंग महादु जाधव</td>
+                <td>श्री रामा दासु जाधव</td>
+                <td>श्री सुदाम भिमराव जाधव (SRPF)</td>
+            </tr>
+            <tr>
+                <td>श्री मधुकर भिमराव जाधव</td>
+                <td>श्री बबन दासु जाधव </td>
+                <td>श्री सतीष कनिराम जाधव(आरोग्य सेवक)</td>
+            </tr>
+            <tr>
+                <td>श्री राजु महादु जाधव(मा.सरपंच)</td>
+                <td>श्री दिलीप प्रभु जाधव</td>
+                <td>श्री दिनेश प्रभु जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री श्रीराम शिवदास जाधव(पोलिस उपनिरीक्षक अकोला)</td>
+                <td>श्री लहू प्रभु जाधव</td>
+                <td>श्री सुनिल दासु जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री गजानन तोळीराम जाधव</td>
+                <td>श्री दिलीप नारायण जाधव (कोतवाल)</td>
+                <td>श्री विष्णू तोळीराम जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री योगेश शेषराव जाधव(बी.फार्म)</td>
+            </tr>
+        </table>
+
+        <table class="custom-table p-lg-5">
+            <tr>
+                <th colspan="3">भाऊबंधांच्या विनंतीस मान देऊन मंगल कार्यास अगत्य येण्याचे करावे</th>
+            </tr>
+            <tr>
+                <td>श्री प्रेमदास धोंडीराम जाधव</td>
+                <td>श्री लखन कोंडीराम जाधव</td>
+                <td>श्री विजय विठ्ठल जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री गजानन माणिक जाधव</td>
+                <td>श्री रमेश बंडू जाधव कनिष्ठ लिपीक</td>
+                <td>श्री राजु उत्तम जाधव(आश्रमशाळा सेवक)</td>
+            </tr>
+            <tr>
+                <td>श्री रामा कोंडीराम जाधव</td>
+                <td>श्री भारत मांगीलाल जाधव(रेल्वे ट्रॅकमन)</td>
+                <td>श्री कैलास गणेश जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री ज्ञानेश्वर धोंडीराम जाधव (शिक्षक)</td>
+                <td>श्री बाळू गणेश जाधव</td>
+                <td>श्री नवनाथ बंडू जाधव</td>
+            </tr>
+            <tr>
+                <td>श्री शरद मांगीलाल जाधव</td>
+            </tr>
+        </table>
+        <div class="">
+            <table class="custom-table p-lg-5">
+                <tr>
+                    <th>चिरंजिव</th>
+                </tr>
+                <tr>
+                    <td>अर्जुन(MSF),अभिषेक,ज्ञानेश्वर,आनंदराज</td>
+                </tr>
+                <tr>
+                    <td>धनंजय, अभिजीत,साईप्रसाद,महेश</td>
+                </tr>
+            </table>
+            <table class="custom-table p-lg-5">
+                <tr>
+                    <th colspan="3">व्यवस्थापक</th>
+                </tr>
+                <tr>
+                    <td>प्रकाश किशन राठोड, गणेशनगर</td>
+                    <td>साहेबराव जयसिंग राठोड, साईनगर</td>
+                    <td>त्रिंबक शंकर राठोड, घेवंडा</td>
+                </tr>
+                <tr>
+                    <td>रमेश विश्वनाथ राठोड, घडोळी</td>
+                    <td>गजानन राठोड घेवंडा</td>
+                    <td>राहुल गोपाल चव्हाण, साईनगर</td>
+                </tr>
+                <tr>
+                    <td>मधुकर मोहन राठोड, साईनगर</td>
+                    <td>गजानन विठ्ठल राठोड,केळी</td>
+                    <td>बाबासाहेब परसराम राठोड, लिंगदरी</td>
+                </tr>
+                <tr>
+                    <td>कुंडलिक खंडू पवार, लिंगदरी</td>
+                    <td>अमोल रामा राठोड, साईनगर</td>
+                    <td>सुनिल काळुराम चव्हाण, साईनगर</td>
+                </tr>
+                <tr>
+                    <td>रवि भिमा राठोड, चारठाणा</td>
+                    <td>संतोष विठ्ठल राठोड, घडोळी</td>
+                    <td>विशाल विष्णू राठोड, गणेशनगर</td>
+                </tr>
+                <tr>
+                    <td>किरण रेवनसिंह राठोड, तामटी</td>
+                    <td>विनोद शामराव राठोड, दुधाळा</td>
+                </tr>
+            </table>
+        </div>
+        <table class="custom-table p-lg-5">
+            <tr>
+                <th colspan="3">कार्यवाहक</th>
+            </tr>
+            <tr>
+                <td>नरसिंग धर्मा राठोड, बोरखेडी</td>
+                <td>रामराव धर्मा राठोड, बोरखेडी</td>
+                <td>तारासिंग धर्मा राठोड, बोरखेडी</td>
+            </tr>
         </table>
         <table class="custom-table p-lg-5">
-            <tr><th>काका काकीच्या लग्नाला यायचं हं...!</th></tr>
-            <tr><td>चि. बालाजी, ओंकार, महारुद्र, साहील</td></tr>
-            <tr><td>कु. शितल, अंजली, ममता, तेजस्विनी, दिव्या, आदिती, स्नेहा</td></tr>
+            <tr>
+                <th>काका काकीच्या लग्नाला यायचं हं...!</th>
+            </tr>
+            <tr>
+                <td>चि. बालाजी, ओंकार, महारुद्र, साहील</td>
+            </tr>
+            <tr>
+                <td>कु. शितल, अंजली, ममता, तेजस्विनी, दिव्या, आदिती, स्नेहा</td>
+            </tr>
         </table>
-          <table class="custom-table p-lg-5">
-            <tr><th>मामा मामीच्या लग्नाला यायचं हं...!</th></tr>
-            <tr><td>चि. पवन, यश, विनित</td></tr>
-            <tr><td>कु. सारेखा, तनवी, तृषा, शिवानी</td></tr>
-          </table>
         <table class="custom-table p-lg-5">
-            <tr><th>व्यवस्थापक </th></tr>
-            <tr><td>समस्त गांवकरी मंडळी, साईनगर तांडा</td></tr>
-          </table>
+            <tr>
+                <th>मामा मामीच्या लग्नाला यायचं हं...!</th>
+            </tr>
+            <tr>
+                <td>चि. पवन, यश, विनित</td>
+            </tr>
+            <tr>
+                <td>कु. सारेखा, तनवी, तृषा, शिवानी</td>
+            </tr>
+        </table>
+        <table class="custom-table p-lg-5">
+            <tr>
+                <th>व्यवस्थापक </th>
+            </tr>
+            <tr>
+                <td>समस्त गांवकरी मंडळी, साईनगर तांडा</td>
+            </tr>
+        </table>
     </div>
-          <br><br><br>
-        
-        <section class="functions content-section p-3" id="functions">
-            <div class="container">
-                <div class="section-title">कार्यक्रम </div>
-                <div class="content-list">
-                    <div class="row events-container">
-                        <div class="col-sm-hidden col-md-7">
-                            <div class="image-container-1">
-                                <div id="event-1-img" class="event-img">
-                                    <img src="./css/images/functions/wedding-function-mehendi.jpg" alt="wedding-website-functions-thumbnail-1">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-5 event-description-wrapper">
-                            <div class="event-description-container">
-                                <div class="event-description">
-                                    <h3 id="event-1-name" class="event-name">मेहेंदी</h3>
-                                    <div class="image-container-2">
-                                        <div id="event-1-img" class="event-img">
-                                            <img src="./css/images/functions/wedding-function-mehendi.jpg" alt="wedding-website-functions-thumbnail-1">
-                                        </div>
-                                    </div>
-                                    <div id="event-1-day" class="event-date">
-                                    मार्च 25, 2024<br>7:30 PM 
-                                    </div>
-                                    <br>
-                                    <address>
-                                        <span id="event-1-map" class="event-map">
-                                    बाबा नाईक धाम ,<br>
-                                    नाईक वाडी, <br>
-                                    लिंबाला तांडा, <br>
-                                    जिंतूर-सेनगाव रोड.  
-                                            <div id="event-1-maplink" class="event-maplink">
-                                                <a target="_blank" type="button" id="map_0" title="View Map" style="text-decoration:none !important;box-shadow:none;" href="https://maps.app.goo.gl/euhVbA7wg1QpWib47" class="btn btn-link view-map action-link">&nbsp;View Map</a>
-                                            </div>
-                                        </span>
-                                    </address>
-                                    <br>
-                                    <p id="event-1-text6" class="event-details" style="padding:5px 0 !important;">Dress Code : तुमची इच्छा</p>
-                                    <div style="margin:10px 0;padding-bottom:30px;"></div>
-                                </div>
+    <br><br><br>
+
+    <section class="functions content-section p-3" id="functions">
+        <div class="container">
+            <div class="section-title">कार्यक्रम </div>
+            <div class="content-list">
+                <div class="row events-container">
+                    <div class="col-sm-hidden col-md-7">
+                        <div class="image-container-1">
+                            <div id="event-1-img" class="event-img">
+                                <img src="./css/images/functions/wedding-function-mehendi.jpg"
+                                    alt="wedding-website-functions-thumbnail-1">
                             </div>
                         </div>
                     </div>
-                    <div class="row events-container">
-                        <div class="col-sm-hidden col-md-7">
-                            <div class="image-container-1">
-                                <div id="event-2-img" class="event-img">
-                                    <img src="./css/images/functions/sangeet.jpg" alt="wedding-website-functions-thumbnail-2">
+                    <div class="col-sm-12 col-md-5 event-description-wrapper">
+                        <div class="event-description-container">
+                            <div class="event-description">
+                                <h3 id="event-1-name" class="event-name">मेहेंदी</h3>
+                                <div class="image-container-2">
+                                    <div id="event-1-img" class="event-img">
+                                        <img src="./css/images/functions/wedding-function-mehendi.jpg"
+                                            alt="wedding-website-functions-thumbnail-1">
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-5 event-description-wrapper">
-                            <div class="event-description-container">
-                                <div class="event-description">
-                                    <h3 id="event-2-name" class="event-name">वराचे आगमन </h3>
-                                    <div class="image-container-2">
-                                        <div id="event-2-img" class="event-img">
-                                            <img src="./css/images/functions/sangeet.jpg" alt="wedding-website-functions-thumbnail-2">
+                                <div id="event-1-day" class="event-date">
+                                    मार्च 25, 2024<br>7:30 PM
+                                </div>
+                                <br>
+                                <address>
+                                    <span id="event-1-map" class="event-map">
+                                        बाबा नाईक धाम ,<br>
+                                        नाईक वाडी, <br>
+                                        लिंबाला तांडा, <br>
+                                        जिंतूर-सेनगाव रोड.
+                                        <div id="event-1-maplink" class="event-maplink">
+                                            <a target="_blank" type="button" id="map_0" title="View Map"
+                                                style="text-decoration:none !important;box-shadow:none;"
+                                                href="https://maps.app.goo.gl/euhVbA7wg1QpWib47"
+                                                class="btn btn-link view-map action-link">&nbsp;View Map</a>
                                         </div>
-                                    </div>
-                                    <div id="event-2-day" class="event-date">
-मार्च 26, 2024<br>5:00 PM - 7:00 PM 
-                                    </div>
-                                    <address>
-                                        <span id="event-1-map" class="event-map">
-बाबा नाईक धाम ,<br>
-नाईक वाडी, <br>
-लिंबाला तांडा, <br>
-जिंतूर-सेनगाव रोड.  
-                                            <div id="event-1-maplink" class="event-maplink">
-                                                <a target="_blank" type="button" id="map_0" title="View Map" style="text-decoration:none !important;box-shadow:none;" href="https://maps.app.goo.gl/euhVbA7wg1QpWib47" class="btn btn-link view-map action-link">&nbsp;View Map</a>
-                                            </div>
-                                        </span>
-                                    </address>
-                                    <br>
-                                    <div style="margin:10px 0;padding-bottom:30px;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row events-container">
-                        <div class="col-sm-hidden col-md-7">
-                            <div class="image-container-1">
-                                <div id="event-3-img" class="event-img">
-                                    <img src="./css/images/functions/wedding-function-haldi.jpg" alt="wedding-website-functions-thumbnail-3">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-5 event-description-wrapper">
-                            <div class="event-description-container">
-                                <div class="event-description">
-                                    <h3 id="event-3-name" class="event-name">हळद</h3>
-                                    <div class="image-container-2">
-                                        <div id="event-3-img" class="event-img">
-                                            <img src="./css/images/functions/wedding-function-haldi.jpg" alt="wedding-website-functions-thumbnail-3">
-                                        </div>
-                                    </div>
-                                    <div id="event-3-day" class="event-date">
-मार्च 26, 2024<br>06:30 PM 
-                                    </div>
-                                    <br>
-                                    <address>
-                                        <span id="event-1-map" class="event-map">
-बाबा नाईक धाम ,<br>
-नाईक वाडी, <br>
-लिंबाला तांडा, <br>
-जिंतूर-सेनगाव रोड.  
-                                            <div id="event-1-maplink" class="event-maplink">
-                                                <a target="_blank" type="button" id="map_0" title="View Map" style="text-decoration:none !important;box-shadow:none;" href="https://maps.app.goo.gl/euhVbA7wg1QpWib47" class="btn btn-link view-map action-link">&nbsp;View Map</a>
-                                            </div>
-                                        </span>
-                                    </address>
-                                    <div style="margin:10px 0;padding-bottom:30px;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row events-container">
-                        <div class="col-sm-hidden col-md-7">
-                            <div class="image-container-1">
-                                <div id="event-4-img" class="event-img">
-                                    <img src="./css/images/functions/wedding-function-wedding.jpg" alt="wedding-website-functions-thumbnail-4">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-5 event-description-wrapper">
-                            <div class="event-description-container">
-                                <div class="event-description">
-                                    <h3 id="event-4-name" class="event-name">लग्न</h3>
-                                    <div class="image-container-2">
-                                        <div id="event-4-img" class="event-img">
-                                            <img src="./css/images/functions/wedding-function-wedding.jpg" alt="wedding-website-functions-thumbnail-4">
-                                        </div>
-                                    </div>
-                                    <div id="event-4-day" class="event-date">
-मार्च 28, 2024<br>11:30 AM 
-                                    </div>
-                                    <br>
-                                    <address>
-                                        <span id="event-4-map" class="event-map">
-बाबा नाईक धाम,<br>
-नाईक वाडी,<br>
-लिंबाला तांडा,<br>
-जिंतूर-सेनगाव रोड.   
-                                            <div id="event-4-maplink" class="event-maplink">
-                                                <a target="_blank" type="button" id="map_2" title="View Map" style="text-decoration:none !important;box-shadow:none;" href="https://maps.app.goo.gl/euhVbA7wg1QpWib47" class="btn btn-link view-map action-link">&nbsp;View Map</a>
-                                            </div>
-                                        </span>
-                                    </address>
-                                    <br>
-                                    <div style="margin:10px 0;padding-bottom:30px;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row events-container">
-                        <div class="col-sm-hidden col-md-7">
-                            <div class="image-container-1">
-                                <div id="event-5-img" class="event-img">
-                                    <img src="./css/images/functions/reception.jpg" alt="wedding-website-functions-thumbnail-5">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-5 event-description-wrapper">
-                            <div class="event-description-container">
-                                <div class="event-description">
-                                    <h3 id="event-5-name" class="event-name">अष्टभोजन</h3>
-                                    <div class="image-container-2">
-                                        <div id="event-5-img" class="event-img">
-                                            <img src="./css/images/functions/reception.jpg" alt="wedding-website-functions-thumbnail-5">
-                                        </div>
-                                    </div>
-                                    <div id="event-5-day" class="event-date">
-मार्च 28, 2024<br>02:30 PM 
-                                    </div>
-                                    <br>
-                                    <address>
-                                        <span id="event-1-map" class="event-map">
-बाबा नाईक धाम ,<br>
-नाईक वाडी, <br>
-लिंबाला तांडा, <br>
-जिंतूर-सेनगाव रोड.  
-                                            <div id="event-1-maplink" class="event-maplink">
-                                                <a target="_blank" type="button" id="map_0" title="View Map" style="text-decoration:none !important;box-shadow:none;" href="https://maps.app.goo.gl/euhVbA7wg1QpWib47" class="btn btn-link view-map action-link">&nbsp;View Map</a>
-                                            </div>
-                                        </span>
-                                    </address>
-                                    <div style="margin:10px 0;padding-bottom:30px;"></div>
-                                </div>
+                                    </span>
+                                </address>
+                                <br>
+                                <p id="event-1-text6" class="event-details" style="padding:5px 0 !important;">Dress Code
+                                    : तुमची इच्छा</p>
+                                <div style="margin:10px 0;padding-bottom:30px;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal" id="map_view" tabindex="-1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Location in map</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row events-container">
+                    <div class="col-sm-hidden col-md-7">
+                        <div class="image-container-1">
+                            <div id="event-2-img" class="event-img">
+                                <img src="./css/images/functions/sangeet.jpg"
+                                    alt="wedding-website-functions-thumbnail-2">
                             </div>
-                            <div class="modal-body">
-                                <div id="google-map-view"></div>
-                            </div>
-                            <div class="modal-footer">
-                                <button id="map_view_direction" type="button" class="btn btn-danger">Get Directions</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 event-description-wrapper">
+                        <div class="event-description-container">
+                            <div class="event-description">
+                                <h3 id="event-2-name" class="event-name">वराचे आगमन </h3>
+                                <div class="image-container-2">
+                                    <div id="event-2-img" class="event-img">
+                                        <img src="./css/images/functions/sangeet.jpg"
+                                            alt="wedding-website-functions-thumbnail-2">
+                                    </div>
+                                </div>
+                                <div id="event-2-day" class="event-date">
+                                    मार्च 26, 2024<br>5:00 PM - 7:00 PM
+                                </div>
+                                <address>
+                                    <span id="event-1-map" class="event-map">
+                                        बाबा नाईक धाम ,<br>
+                                        नाईक वाडी, <br>
+                                        लिंबाला तांडा, <br>
+                                        जिंतूर-सेनगाव रोड.
+                                        <div id="event-1-maplink" class="event-maplink">
+                                            <a target="_blank" type="button" id="map_0" title="View Map"
+                                                style="text-decoration:none !important;box-shadow:none;"
+                                                href="https://maps.app.goo.gl/euhVbA7wg1QpWib47"
+                                                class="btn btn-link view-map action-link">&nbsp;View Map</a>
+                                        </div>
+                                    </span>
+                                </address>
+                                <br>
+                                <div style="margin:10px 0;padding-bottom:30px;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
-        <section class="travel content-section" id="travel">
-            <div class="container">
-                <div class="section-title">प्रवास </div>
-                <div class="content-list">
-                    <div id="travel2">
-                        <h3 id="travel-title-2" class="travel-head">वाहतूक </h3>
-                        <p id="travel-text-2" class="travel-desc">जिंतूर ते सेनगाव रोड वर, जिंतूर पासून 22KM आणि सेनगॉन पासून 17km.</p>
+                <div class="row events-container">
+                    <div class="col-sm-hidden col-md-7">
+                        <div class="image-container-1">
+                            <div id="event-3-img" class="event-img">
+                                <img src="./css/images/functions/wedding-function-haldi.jpg"
+                                    alt="wedding-website-functions-thumbnail-3">
+                            </div>
+                        </div>
                     </div>
-                    <div id="travel3">
-                        <h3 id="travel-title-3" class="travel-head">स्थळा विषयी </h3>
-                        <p id="travel-text-3" class="travel-desc">जिंतूर ते सेनगाव रोड वर जवळच खूप जुने येलदरी धरण असून ते लिंबाला पासून फक्त 5KM आहे.</p>
+                    <div class="col-sm-12 col-md-5 event-description-wrapper">
+                        <div class="event-description-container">
+                            <div class="event-description">
+                                <h3 id="event-3-name" class="event-name">हळद</h3>
+                                <div class="image-container-2">
+                                    <div id="event-3-img" class="event-img">
+                                        <img src="./css/images/functions/wedding-function-haldi.jpg"
+                                            alt="wedding-website-functions-thumbnail-3">
+                                    </div>
+                                </div>
+                                <div id="event-3-day" class="event-date">
+                                    मार्च 26, 2024<br>06:30 PM
+                                </div>
+                                <br>
+                                <address>
+                                    <span id="event-1-map" class="event-map">
+                                        बाबा नाईक धाम ,<br>
+                                        नाईक वाडी, <br>
+                                        लिंबाला तांडा, <br>
+                                        जिंतूर-सेनगाव रोड.
+                                        <div id="event-1-maplink" class="event-maplink">
+                                            <a target="_blank" type="button" id="map_0" title="View Map"
+                                                style="text-decoration:none !important;box-shadow:none;"
+                                                href="https://maps.app.goo.gl/euhVbA7wg1QpWib47"
+                                                class="btn btn-link view-map action-link">&nbsp;View Map</a>
+                                        </div>
+                                    </span>
+                                </address>
+                                <div style="margin:10px 0;padding-bottom:30px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row events-container">
+                    <div class="col-sm-hidden col-md-7">
+                        <div class="image-container-1">
+                            <div id="event-4-img" class="event-img">
+                                <img src="./css/images/functions/wedding-function-wedding.jpg"
+                                    alt="wedding-website-functions-thumbnail-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 event-description-wrapper">
+                        <div class="event-description-container">
+                            <div class="event-description">
+                                <h3 id="event-4-name" class="event-name">लग्न</h3>
+                                <div class="image-container-2">
+                                    <div id="event-4-img" class="event-img">
+                                        <img src="./css/images/functions/wedding-function-wedding.jpg"
+                                            alt="wedding-website-functions-thumbnail-4">
+                                    </div>
+                                </div>
+                                <div id="event-4-day" class="event-date">
+                                    मार्च 28, 2024<br>11:30 AM
+                                </div>
+                                <br>
+                                <address>
+                                    <span id="event-4-map" class="event-map">
+                                        बाबा नाईक धाम,<br>
+                                        नाईक वाडी,<br>
+                                        लिंबाला तांडा,<br>
+                                        जिंतूर-सेनगाव रोड.
+                                        <div id="event-4-maplink" class="event-maplink">
+                                            <a target="_blank" type="button" id="map_2" title="View Map"
+                                                style="text-decoration:none !important;box-shadow:none;"
+                                                href="https://maps.app.goo.gl/euhVbA7wg1QpWib47"
+                                                class="btn btn-link view-map action-link">&nbsp;View Map</a>
+                                        </div>
+                                    </span>
+                                </address>
+                                <br>
+                                <div style="margin:10px 0;padding-bottom:30px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row events-container">
+                    <div class="col-sm-hidden col-md-7">
+                        <div class="image-container-1">
+                            <div id="event-5-img" class="event-img">
+                                <img src="./css/images/functions/reception.jpg"
+                                    alt="wedding-website-functions-thumbnail-5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 event-description-wrapper">
+                        <div class="event-description-container">
+                            <div class="event-description">
+                                <h3 id="event-5-name" class="event-name">अष्टभोजन</h3>
+                                <div class="image-container-2">
+                                    <div id="event-5-img" class="event-img">
+                                        <img src="./css/images/functions/reception.jpg"
+                                            alt="wedding-website-functions-thumbnail-5">
+                                    </div>
+                                </div>
+                                <div id="event-5-day" class="event-date">
+                                    मार्च 28, 2024<br>02:30 PM
+                                </div>
+                                <br>
+                                <address>
+                                    <span id="event-1-map" class="event-map">
+                                        बाबा नाईक धाम ,<br>
+                                        नाईक वाडी, <br>
+                                        लिंबाला तांडा, <br>
+                                        जिंतूर-सेनगाव रोड.
+                                        <div id="event-1-maplink" class="event-maplink">
+                                            <a target="_blank" type="button" id="map_0" title="View Map"
+                                                style="text-decoration:none !important;box-shadow:none;"
+                                                href="https://maps.app.goo.gl/euhVbA7wg1QpWib47"
+                                                class="btn btn-link view-map action-link">&nbsp;View Map</a>
+                                        </div>
+                                    </span>
+                                </address>
+                                <div style="margin:10px 0;padding-bottom:30px;"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="content-section" id="photo_gallery">
-            <div class="container">
-                <div class="section-title">फोटो गॅलरी </div>
-                <div class="content-list">
-                    <div class="section-content">आमच्या गॅलरीत स्वागत आहे. या प्रवासातील सर्व मजा, उत्सव आणि विशेष क्षणांमध्ये डोकावून पहा. आम्ही आशा करतो की तुम्ही त्याचा आनंद घ्याल!</div>
-                    <div class="grid">
-                        <!-- <div class="item img-block" id="drive-image-container"></div> -->
-<div id="drive-image-container" class="container-fluid">  
+            <div class="modal" id="map_view" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Location in map</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="google-map-view"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="map_view_direction" type="button" class="btn btn-danger">Get Directions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="travel content-section" id="travel">
+        <div class="container">
+            <div class="section-title">प्रवास </div>
+            <div class="content-list">
+                <div id="travel2">
+                    <h3 id="travel-title-2" class="travel-head">वाहतूक </h3>
+                    <p id="travel-text-2" class="travel-desc">जिंतूर ते सेनगाव रोड वर, जिंतूर पासून 22KM आणि सेनगॉन
+                        पासून 17km.</p>
+                </div>
+                <div id="travel3">
+                    <h3 id="travel-title-3" class="travel-head">स्थळा विषयी </h3>
+                    <p id="travel-text-3" class="travel-desc">जिंतूर ते सेनगाव रोड वर जवळच खूप जुने येलदरी धरण असून ते
+                        लिंबाला पासून फक्त 5KM आहे.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content-section" id="photo_gallery">
+        <div class="container">
+            <div class="section-title">फोटो गॅलरी </div>
+            <div class="content-list">
+                <div class="section-content">आमच्या गॅलरीत स्वागत आहे. या प्रवासातील सर्व मजा, उत्सव आणि विशेष
+                    क्षणांमध्ये डोकावून पहा. आम्ही आशा करतो की तुम्ही त्याचा आनंद घ्याल!</div>
+                <div class="grid">
+                    <!-- <div class="item img-block" id="drive-image-container"></div> -->
+                    <div id="drive-image-container" class="container-fluid">
 
-</div>
+                    </div>
 
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-body">
-      </div>
-    </div>
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                </div>
+                            </div>
 
-  </div>
-</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="galleryModal" class="modal fade" role="dialog" tabindex="-1" aria-modal="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" style="border-bottom: none; padding: 0">
-                        <button type="button" class="btn btn-default close-but" data-bs-dismiss="modal">
-                            <i class="fa fa-times-circle"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body" style="padding:0px !important;">
-                        <img class="img-modal" src="">
-                    </div>
+    </div>
+    <div id="galleryModal" class="modal fade" role="dialog" tabindex="-1" aria-modal="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom: none; padding: 0">
+                    <button type="button" class="btn btn-default close-but" data-bs-dismiss="modal">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
                 </div>
-            </div>
-            <div>
-                <span class="prev-pos" id="prev-but" aria-hidden="true">
-                    <i onclick="loadElementToShow(-1)" class="fa fa-chevron-circle-left"></i>
-                </span>
-                <span class="next-pos" id="next-but" aria-hidden="true">
-                    <i onclick="loadElementToShow(1)" class="fa fa-chevron-circle-right"></i>
-                </span>
+                <div class="modal-body" style="padding:0px !important;">
+                    <img class="img-modal" src="">
+                </div>
             </div>
         </div>
-   
-        <footer id="footer">
-            <div class="primary-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col text-uppercase">
-                            <img src="./css/images/logo/logo3.png" id="footer-logo" class="footer-logo" alt="footer-logo">
-                            <h4 class="footer-name">राधा &amp; सुनिल</h4>
-                            <span class="footer-date">मार्च 28, 2024</span>
-                        </div>
+        <div>
+            <span class="prev-pos" id="prev-but" aria-hidden="true">
+                <i onclick="loadElementToShow(-1)" class="fa fa-chevron-circle-left"></i>
+            </span>
+            <span class="next-pos" id="next-but" aria-hidden="true">
+                <i onclick="loadElementToShow(1)" class="fa fa-chevron-circle-right"></i>
+            </span>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="primary-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-uppercase">
+                        <img src="./css/images/logo/logo3.png" id="footer-logo" class="footer-logo" alt="footer-logo">
+                        <h4 class="footer-name">राधा &amp; सुनिल</h4>
+                        <span class="footer-date">मार्च 28, 2024</span>
                     </div>
                 </div>
             </div>
-            <div class="powered-by-footer">
-                Powered by: <a class="powered-by-footer-tag" href="https://www.savethedate.com/">www.savethedate.com</a>
-            </div>
-        </footer>
-        <style>
-           
+        </div>
+        <div class="powered-by-footer">
+            Powered by: <a class="powered-by-footer-tag" href="https://www.savethedate.com/">www.savethedate.com</a>
+        </div>
+    </footer>
+    <style>
+        .bottom-selector {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 9999;
+            width: 100%;
+            background: #fff;
+        }
 
+        .bottom-selector .red-button,
+        .bottom-selector .white-button {
+            background-color: #8d170e;
+            border: 1px solid #8d170e;
+            border-radius: 0px;
+            color: #ffffff;
+            font-family: "Playfair";
+            font-size: 1rem;
+            font-weight: 700;
+            outline: none !important;
+            padding: 10px 20px;
+        }
+
+        .bottom-selector .white-button {
+            background-color: #ffffff;
+            color: #8d170e;
+        }
+
+        @media only screen and (min-width: 451px) {
+            .bottom-selector .button:first-child {
+                margin-right: 1rem;
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
             .bottom-selector {
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                z-index: 9999;
-                width: 100%;
-                background: #fff;
+                text-align: center;
             }
 
-            .bottom-selector .red-button, .bottom-selector .white-button {
-                background-color: #8d170e;
-                border: 1px solid #8d170e;
-                border-radius: 0px;
-                color: #ffffff;
-                font-family: "Playfair";
-                font-size: 1rem;
-                font-weight: 700;
-                outline: none !important;
-                padding: 10px 20px;
+            .bottom-selector .button {
+                width: 250px;
             }
 
-            .bottom-selector .white-button {
-                background-color: #ffffff;
-                color: #8d170e;
+            .bottom-selector .button:first-child {
+                margin-bottom: 1rem;
             }
 
-            @media only screen and (min-width: 451px) {
-                .bottom-selector .button:first-child {
-                    margin-right: 1rem;
-                }
-            }
 
-            @media only screen and (max-width: 450px) {
-                .bottom-selector {
-                    text-align: center;
-                }
+        }
+    </style>
+    <script type="text/javascript"
+        src='https://maps.google.com/maps/api/js?key=AIzaSyCnGhL_3q7KRiHNvBLWqezkFczwWe4Bv8g'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="./scripts/imageScript.js"></script>
+    <script type="text/javascript">
+        var password = false
+            , pref_url = '/api/'
+            , prod_url = '/api/'
+            , guest_url = '/api/'
+            , siteTheme = 'theme4'
+            , layout = '1'
+            , loggedIn = false
+            , page = 'host'
+            , pageType = 'website'
+            , enableMarketplaceForm = false
+            , page_content = 'host_website'
+            , productOccasion = 'wedding'
+            , productId = '497'
+            , pwa = 0
+            , eventDate = 1711609219000
+            , visible_sec = JSON.parse(JSON.stringify(["our_story", "functions", "travel", "photo_gallery"]));
+        var registry_products = [];
+        window.localStorage.setItem('website_url', regurl);
+        function customVirtualWeddingSection() { }
+        // To add any customised section for Virtual Wedding in future
+    </script>
+    <script type="text/javascript" src="./scripts/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="./scripts/website/common//waterfall.min.js"></script>
+    <script type="text/javascript" src="./scripts/website/common/common_site.js"></script>
+    <script type="text/javascript" src="/scripts/website/product_view.js"></script>
+    <script>
+        var websiteId = "";
+        var visibleSections = JSON.parse(JSON.stringify('["our_story","functions","travel","photo_gallery"]'));
+        var registry_products = [];
+    </script>
+</body>
 
-                .bottom-selector .button {
-                    width: 250px;
-                }
-
-                .bottom-selector .button:first-child {
-                    margin-bottom: 1rem;
-                }
-
-               
-            }
-        </style>
-        <script type="text/javascript" src='https://maps.google.com/maps/api/js?key=AIzaSyCnGhL_3q7KRiHNvBLWqezkFczwWe4Bv8g'></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="text/javascript" src="./scripts/imageScript.js"></script>
-        <script type="text/javascript">
-            var password = false
-              , pref_url = '/api/'
-              , prod_url = '/api/'
-              , guest_url = '/api/'
-              , siteTheme = 'theme4'
-              , layout = '1'
-              , loggedIn = false
-              , page = 'host'
-              , pageType = 'website'
-              , enableMarketplaceForm = false
-              , page_content = 'host_website'
-              , productOccasion = 'wedding'
-              , productId = '497'
-              , pwa = 0
-              , eventDate = 1711609219000
-              , visible_sec = JSON.parse(JSON.stringify(["our_story", "functions", "travel", "photo_gallery"]));
-            var registry_products = [];
-            window.localStorage.setItem('website_url', regurl);
-            function customVirtualWeddingSection() {}
-            // To add any customised section for Virtual Wedding in future
-        </script>
-        <script type="text/javascript" src="./scripts/jquery.datetimepicker.full.min.js"></script>
-        <script type="text/javascript" src="./scripts/website/common//waterfall.min.js"></script>
-        <script type="text/javascript" src="./scripts/website/common/common_site.js"></script>
-        <script type="text/javascript" src="/scripts/website/product_view.js"></script>
-        <script>
-            var websiteId = "";
-            var visibleSections = JSON.parse(JSON.stringify('["our_story","functions","travel","photo_gallery"]'));
-            var registry_products = [];
-        </script>
-    </body>
 </html>

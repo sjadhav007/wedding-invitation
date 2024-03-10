@@ -2528,7 +2528,87 @@ a.powered-by-footer-tag:hover {
         width: 95% !important;
     }
 
-    /*
+    #guest_book {
+        margin: 15px;
+    }
+
+    .thanks-banner,
+    .alert-banner {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .rsvp-input,
+    .join-meeting-wrapper input,
+    #guest_book input {
+        font-size: 14px;
+    }
+
+    .rsvp-text-area,
+    .join-meeting-wrapper textarea,
+    #guest_book textarea,
+    .rsvp-input::placeholder,
+    .rsvp-text-area::placeholder,
+    .join-meeting-wrapper input::placeholder,
+    .join-meeting-wrapper textarea::placeholder,
+    #guest_book input::placeholder,
+    #guest_book textarea::placeholder {
+        font-size: 14px;
+    }
+
+    .guest_book_form_wrapper #gemail,
+    .rsvp-wrapper #email {
+        line-height: 40px !important;
+    }
+
+    .guest_book_form_wrapper #gname,
+    .rsvp-wrapper input[type="text"] {
+        line-height: 40px !important;
+    }
+
+    #rsvp_submit,
+    button#guestbook_submit,
+    .include-guestbook,
+    .rsvp-question,
+    .rsvp-options {
+        font-size: 14px;
+    }
+
+    .rsvp-submit,
+    #attend_meeting,
+    #buy-gift,
+    button#guestbook_submit {
+        max-width: 210px !important;
+    }
+
+    #rsvp_submit,
+    button#guestbook_submit {
+        padding: 10px 5px;
+    }
+
+    #rsvp_submit {
+        margin-bottom: 30px;
+    }
+
+    .error-red-text {
+        font-size: 15px !important;
+    }
+
+    .rsvp-radio {
+        padding: 0 10px;
+    }
+
+    #guest_book .content-list {
+        padding: 20px 29px 20px !important;
+    }
+
+    .guestbook-note {
+        line-height: 1.6;
+    }
+
+    /* #rsvp .content-list,.join-meeting-wrapper,#guest_book .guest_book_form{
+        padding: 80px 45px 80px;
+    } */
     .join_virtually_nav {
         text-align: left;
         transform: none;
@@ -2631,7 +2711,7 @@ a.powered-by-footer-tag:hover {
         display: block;
         max-width: 500px;
         margin: 0 auto;
-
+        /* padding: 15px; */
     }
 
     .image-container-2 {
@@ -2693,7 +2773,7 @@ a.powered-by-footer-tag:hover {
         width: 40px;
         height: 40px;
     }
-} */
+}
 
 @media (max-width: 1100px) {
     .img-block {
