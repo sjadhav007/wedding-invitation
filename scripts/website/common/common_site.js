@@ -152,73 +152,73 @@ function resetAudioState() {
     }
 }
 
-function loadElementToShow(step) {
-    var nextImg, nextIndex, currentIndex, currentUrl, allImages = [];
-    jQuery.each(jQuery('#photo_gallery .gallery-image'), function (key, value) {
-        allImages.push(jQuery(value).attr('src'));
-    });
-    currentUrl = jQuery('#galleryModal .modal-body .img-modal').attr('src');
-    currentIndex = allImages.indexOf(currentUrl);
-    if (step == -1) {
-        nextIndex = (currentIndex == 0) ? allImages.length - 1 : currentIndex - 1;
-    } else {
-        nextIndex = (currentIndex == (allImages.length - 1)) ? 0 : currentIndex + 1;
-    }
-    nextImg = allImages[nextIndex];
-    jQuery('#galleryModal .modal-body .img-modal').attr('src', nextImg);
-}
+// function loadElementToShow(step) {
+//     var nextImg, nextIndex, currentIndex, currentUrl, allImages = [];
+//     jQuery.each(jQuery('#photo_gallery .gallery-image'), function (key, value) {
+//         allImages.push(jQuery(value).attr('src'));
+//     });
+//     currentUrl = jQuery('#galleryModal .modal-body .img-modal').attr('src');
+//     currentIndex = allImages.indexOf(currentUrl);
+//     if (step == -1) {
+//         nextIndex = (currentIndex == 0) ? allImages.length - 1 : currentIndex - 1;
+//     } else {
+//         nextIndex = (currentIndex == (allImages.length - 1)) ? 0 : currentIndex + 1;
+//     }
+//     nextImg = allImages[nextIndex];
+//     jQuery('#galleryModal .modal-body .img-modal').attr('src', nextImg);
+// }
 
-function loadGalleryModal(url) {
-    jQuery('#galleryModal .modal-body .img-modal').attr('src', url);
-    jQuery('#galleryModal').modal('show');
-}
+// function loadGalleryModal(url) {
+//     jQuery('#galleryModal .modal-body .img-modal').attr('src', url);
+//     jQuery('#galleryModal').modal('show');
+// }
 
-const galleryImages = document.querySelectorAll('.img-block img');
-const modalImg = document.querySelector('#galleryModal .img-modal');
-const prevBtn = document.querySelector('#prev-but');
-const nextBtn = document.querySelector('#next-but');
+// const galleryImages = document.querySelectorAll('.img-block img');
+// const modalImg = document.querySelector('#galleryModal .img-modal');
+// const prevBtn = document.querySelector('#prev-but');
+// const nextBtn = document.querySelector('#next-but');
 
-let currentImageIndex = 0;
+// let currentImageIndex = 0;
 
-galleryImages.forEach((image, index) => {
-  image.addEventListener('click', () => {
-    currentImageIndex = index;
-    const imgSrc = image.getAttribute('src');
-    modalImg.setAttribute('src', imgSrc);
-    document.querySelector('#galleryModal').classList.add('show');
-  });
-});
+// galleryImages.forEach((image, index) => {
+//   image.addEventListener('click', () => {
+//     currentImageIndex = index;
+//     const imgSrc = image.getAttribute('src');
+//     modalImg.setAttribute('src', imgSrc);
+//     document.querySelector('#galleryModal').classList.add('show');
+//   });
+// });
 
-document.querySelector('.close-but').addEventListener('click', () => {
-  document.querySelector('#galleryModal').classList.remove('show');
-});
+// document.querySelector('.close-but').addEventListener('click', () => {
+//   document.querySelector('#galleryModal').classList.remove('show');
+// });
 
-function loadElementToShow(direction) {
-  currentImageIndex += direction;
-  if (currentImageIndex >= galleryImages.length) {
-    currentImageIndex = 0;
-  } else if (currentImageIndex < 0) {
-    currentImageIndex = galleryImages.length - 1;
-  }
-  const imgSrc = galleryImages[currentImageIndex].getAttribute('src');
-  modalImg.setAttribute('src', imgSrc);
-}
+// function loadElementToShow(direction) {
+//   currentImageIndex += direction;
+//   if (currentImageIndex >= galleryImages.length) {
+//     currentImageIndex = 0;
+//   } else if (currentImageIndex < 0) {
+//     currentImageIndex = galleryImages.length - 1;
+//   }
+//   const imgSrc = galleryImages[currentImageIndex].getAttribute('src');
+//   modalImg.setAttribute('src', imgSrc);
+// }
 
-prevBtn.addEventListener('click', () => {
-  loadElementToShow(-1);
-});
+// prevBtn.addEventListener('click', () => {
+//   loadElementToShow(-1);
+// });
 
-nextBtn.addEventListener('click', () => {
-  loadElementToShow(1);
-});
+// nextBtn.addEventListener('click', () => {
+//   loadElementToShow(1);
+// });
 
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'ArrowLeft') {
-    loadElementToShow(-1);
-  } else if (event.key === 'ArrowRight') {
-    loadElementToShow(1);
-  }
-});
+// document.addEventListener('keydown', (event) => {
+//   if (event.key === 'ArrowLeft') {
+//     loadElementToShow(-1);
+//   } else if (event.key === 'ArrowRight') {
+//     loadElementToShow(1);
+//   }
+// });
 
 
 function verifyPassword() {
